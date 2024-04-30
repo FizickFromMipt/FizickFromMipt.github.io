@@ -59,8 +59,16 @@
     <script>
         // Функция для загрузки изображений из папки Archive
         async function loadImages() {
-            const response = await fetch('get_images.php'); // замените 'get_images.php' на ваш путь к скрипту, который возвращает список изображений
-            const images = await response.json();
+            const images = [
+            "trainings.jpg",
+            "gifts.jpg",
+            "lectures.jpg",
+            "therapy.jpg",
+            "events.jpg",
+            "exams.jpg",
+            "diagnostics.jpg",
+            "blog.jpg"
+            ]
 
             const gallery = document.getElementById('gallery');
             images.forEach(image => {
