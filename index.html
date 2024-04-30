@@ -114,13 +114,30 @@
         <p>Архив блога - <a href="#" class="button">Смотреть</a></p>
     </div>
 
-    <script>
-        function nextSlide() {
-            // Добавьте логику для пролистывания карусели
+<script>
+    var currentSlide = 0;
+    var slides = document.querySelectorAll('.carousel img');
+    var totalSlides = slides.length;
+
+    function updateSlides() {
+        for (var i = 0; i < totalSlides; i++) {
+            slides[i].style.display = 'none';
         }
-        function prevSlide() {
-            // Добавьте логику для пролистывания карусели
-        }
-    </script>
+        slides[currentSlide].style.display = 'block';
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlides();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlides();
+    }
+
+    updateSlides(); // Инициализируем карусель при загрузке страницы
+</script>
+
 </body>
 </html>
