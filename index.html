@@ -3,46 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Меню</title>
+    <title>Услуги психолога</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
-        header, footer { text-align: center; padding: 10px; }
-        section { margin-top: 20px; }
-        .services { background-color: #f4f4f4; padding: 10px; }
-        .contact { background-color: #ddf; padding: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+        }
+        h1, h2 {
+            color: #2C3E50;
+        }
+        .service {
+            background: #ECF0F1;
+            border: 1px solid #BDC3C7;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .service a {
+            color: #2980B9;
+            text-decoration: none;
+        }
+        .service a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Название Бота</h1>
-    </header>
+    <h1>Услуги кабинета психолога</h1>
 
-    <section id="about">
-        <h2>Описание</h2>
-        <p>Это телеграм-бот, который помогает вам управлять вашими задачами и предоставляет полезные сервисы, такие как бронирование, оповещения и другие.</p>
-    </section>
+    <div class="service">
+        <h2>Индивидуальная консультация</h2>
+        <p>Продолжительность: 50 минут</p>
+        <p><a href="https://example.com/book-session">Забронировать сеанс</a></p>
+        <p><a href="https://example.com/pay-session">Оплатить сеанс</a></p>
+    </div>
 
-    <section class="services" id="services">
-        <h2>Услуги</h2>
-        <ul>
-            <li>Услуга 1: Описание услуги 1.</li>
-            <li>Услуга 2: Описание услуги 2.</li>
-            <li>Услуга 3: Описание услуги 3.</li>
-        </ul>
-    </section>
+    <div class="service">
+        <h2>Семейная терапия</h2>
+        <p>Продолжительность: 90 минут</p>
+        <p><a href="https://example.com/book-family">Забронировать сеанс</a></p>
+        <p><a href="https://example.com/pay-family">Оплатить сеанс</a></p>
+    </div>
 
-    <section id="instructions">
-        <h2>Инструкции</h2>
-        <p>Для начала работы с ботом отправьте ему команду /start в Телеграме.</p>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Контакты</h2>
-        <p>Если у вас есть вопросы, пожалуйста, напишите нам на email@example.com</p>
-    </section>
-
-    <footer>
-        <p></p>
-    </footer>
+    <div class="service">
+        <h2>Онлайн-консультация</h2>
+        <p>Продолжительность: 50 минут</p>
+        <p><a href="https://example.com/book-online">Забронировать сеанс</a></p>
+        <p><a href="https://example.com/pay-online">Оплатить сеанс</a></p>
+    </div>
 </body>
 </html>
