@@ -5,51 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги психолога</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-        }
-        h1, h2 {
-            color: #2C3E50;
-        }
-        .service {
-            background: #ECF0F1;
-            border: 1px solid #BDC3C7;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .service a {
-            color: #2980B9;
-            text-decoration: none;
-        }
-        .service a:hover {
-            text-decoration: underline;
-        }
+        body { font-family: Arial, sans-serif; }
+        .menu { background-color: #f0f0f0; padding: 10px; }
+        .menu a { padding: 10px; color: #333; text-decoration: none; }
+        .menu a:hover { text-decoration: underline; }
+        .service { margin: 20px; padding: 20px; border: 1px solid #ccc; }
+        .service h2 { color: #2C3E50; }
+        .service p { margin: 5px 0; }
+        .button { padding: 10px; background-color: #4CAF50; color: white; text-decoration: none; }
+        .button:hover { background-color: #45a049; }
+        .carousel { width: 100%; overflow: hidden; position: relative; }
+        .carousel img { width: 100%; display: block; }
+        .carousel button { position: absolute; top: 50%; background-color: rgba(0, 0, 0, 0.5); color: white; border: none; cursor: pointer; padding: 10px; }
+        .carousel button.prev { left: 10px; }
+        .carousel button.next { right: 10px; }
     </style>
 </head>
 <body>
-    <h1>Услуги кабинета психолога</h1>
-
-    <div class="service">
-        <h2>Индивидуальная консультация</h2>
-        <p>Продолжительность: 50 минут</p>
-        <p><a href="https://example.com/book-session">Забронировать сеанс</a></p>
-        <p><a href="https://example.com/pay-session">Оплатить сеанс</a></p>
+    <div class="menu">
+        <a href="#lectures">Лекции</a>
+        <a href="#trainings">Тренинги</a>
+        <a href="#diagnostics">Диагностика</a>
+        <a href="#therapy">Терапия</a>
+        <a href="#events">События</a>
+        <a href="#exams">Экзамен</a>
+        <a href="#gifts">Подарочные сертификаты</a>
+        <a href="#blog">Архив блога</a>
     </div>
 
-    <div class="service">
-        <h2>Семейная терапия</h2>
-        <p>Продолжительность: 90 минут</p>
-        <p><a href="https://example.com/book-family">Забронировать сеанс</a></p>
-        <p><a href="https://example.com/pay-family">Оплатить сеанс</a></p>
+    <!-- Лекции -->
+    <div class="service" id="lectures">
+        <h2>Лекции</h2>
+        <p><a href="#" class="button">Абонементы - Купить</a></p>
+        <p><a href="#" class="button">Записаться на ближайший цикл</a></p>
+        <!-- Добавить изображения и информацию для ближайшего цикла здесь -->
     </div>
 
-    <div class="service">
-        <h2>Онлайн-консультация</h2>
-        <p>Продолжительность: 50 минут</p>
-        <p><a href="https://example.com/book-online">Забронировать сеанс</a></p>
-        <p><a href="https://example.com/pay-online">Оплатить сеанс</a></p>
+    <!-- Тренинги -->
+    <div class="service" id="trainings">
+        <h2>Тренинги</h2>
+        <p>Старт набора - <a href="#" class="button">Записаться</a></p>
+        <!-- Информация о всех тренингах -->
+        <!-- В каждом тренинге кнопка действия -->
     </div>
+
+    <!-- Диагностика -->
+    <div class="service" id="diagnostics">
+        <h2>Диагностика</h2>
+        <p>Ближайшая диагностика - <a href="#" class="button">Записаться</a></p>
+        <p>Карта личности - <a href="#" class="button">Оформить</a></p>
+    </div>
+
+    <!-- Терапия -->
+    <div class="service" id="therapy">
+        <h2>Терапия</h2>
+        <p><a href="#" class="button">Записаться на сессию</a></p>
+    </div>
+
+    <!-- События -->
+    <div class="carousel" id="events">
+        <img src="event.jpg" alt="Ближайшее событие">
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+        <p><a href="#" class="button">Весь календарь</a></p>
+    </div>
+
+    <!-- Экзамен -->
+    <div class="service" id="exams">
+        <h2>Экзамен</h2>
+        <p><a href="#" class="button">Записаться</a></p>
+    </div>
+
+    <!-- Подарочные сертификаты -->
+    <div class="service" id="gifts">
+        <h2>Подарочные сертификаты</h2>
+        <!-- Информация и кнопка действия -->
+    </div>
+
+    <!-- Архив блога -->
+    <div class="service" id="blog">
+        <h2>Архив блога</h2>
+        <!-- Список статей -->
+    </div>
+
+    <script>
+        // Простая реализация карусели для демонстрационных целей
+        function nextSlide() {
+            // Добавьте логику для пролистывания карусели
+        }
+        function prevSlide() {
+            // Добавьте логику для пролистывания карусели
+        }
+    </script>
 </body>
 </html>
