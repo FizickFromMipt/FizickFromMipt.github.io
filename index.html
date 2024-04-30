@@ -9,11 +9,30 @@
         .service { margin: 20px; padding: 20px; border: 1px solid #ccc; }
         .service h2 { color: #2C3E50; }
         .service p { margin: 5px 0; }
-        .button { padding: 10px; background-color: #4CAF50; color: white; text-decoration: none; }
-        .button:hover { background-color: #45a049; }
+        .button {
+            padding: 10px 20px;
+            background-color: #00BCD4; /* Циановый цвет */
+            color: white;
+            text-decoration: none;
+            border-radius: 20px; /* Закругленные края */
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0097A7; /* Темный циан при наведении */
+        }
         .carousel { width: 100%; overflow: hidden; position: relative; }
         .carousel img { width: 100%; display: block; }
-        .carousel button { position: absolute; top: 50%; background-color: rgba(0, 0, 0, 0.5); color: white; border: none; cursor: pointer; padding: 10px; }
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%; /* Круглые кнопки для карусели */
+        }
         .carousel button.prev { left: 10px; }
         .carousel button.next { right: 10px; }
     </style>
@@ -24,15 +43,12 @@
         <h2>Лекции</h2>
         <p><a href="#" class="button">Абонементы - Купить</a></p>
         <p><a href="#" class="button">Записаться на ближайший цикл</a></p>
-        <!-- Добавить изображения и информацию для ближайшего цикла здесь -->
     </div>
 
     <!-- Тренинги -->
     <div class="service" id="trainings">
         <h2>Тренинги</h2>
         <p>Старт набора - <a href="#" class="button">Записаться</a></p>
-        <!-- Информация о всех тренингах -->
-        <!-- В каждом тренинге кнопка действия -->
     </div>
 
     <!-- Диагностика -->
@@ -65,17 +81,14 @@
     <!-- Подарочные сертификаты -->
     <div class="service" id="gifts">
         <h2>Подарочные сертификаты</h2>
-        <!-- Информация и кнопка действия -->
     </div>
 
     <!-- Архив блога -->
     <div class="service" id="blog">
         <h2>Архив блога</h2>
-        <!-- Список статей -->
     </div>
 
     <script>
-        // Простая реализация карусели для демонстрационных целей
         function nextSlide() {
             // Добавьте логику для пролистывания карусели
         }
