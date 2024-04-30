@@ -10,6 +10,12 @@
         body {
             font-family: 'Nunito', sans-serif;
             font-weight: bold;
+            color: black; /* Черный цвет текста по умолчанию */
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: white; /* Белый цвет текста в темной теме */
+            }
         }
         h1, p {
             margin: 20px;
