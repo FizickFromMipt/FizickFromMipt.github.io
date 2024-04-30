@@ -85,7 +85,7 @@
     </div>
 
     <!-- События -->
-    <div class="carousel" id="events">
+    <div class="service" id="events">
         <h2>События</h2>
         <img src="events.jpg" alt="Ближайшее событие">
         <p><a href="#" class="button">Весь календарь</a></p>
@@ -111,31 +111,6 @@
         <img src="blog.jpg" alt="Архив блога">
         <p>Архив блога - <a href="#" class="button">Смотреть</a></p>
     </div>
-
-<script>
-    var currentSlide = 0;
-    var slides = document.querySelectorAll('.carousel img');
-    var totalSlides = slides.length;
-
-    function updateSlides() {
-        for (var i = 0; i < totalSlides; i++) {
-            slides[i].style.display = 'none';
-        }
-        slides[currentSlide].style.display = 'block';
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlides();
-    }
-
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateSlides();
-    }
-
-    updateSlides(); // Инициализируем карусель при загрузке страницы
-</script>
 
 </body>
 </html>
