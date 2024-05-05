@@ -15,21 +15,16 @@
             font-family: 'Nunito', sans-serif;
             font-weight: bold;
             background-color: #f8f8f8;
-            overflow-x: hidden; /* Убираем горизонтальный скролл */
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Центрирование всех элементов на странице */
         }
         .header {
             text-align: center;
-            padding: 1vw;
+            padding: 20px;
             background-color: #e6e6e6;
-            border-bottom: 0.2vw solid #ccc;
-            width: 100%;
-            max-width: 600px; /* Максимальная ширина для больших экранов */
+            border-bottom: 2px solid #ccc;
         }
         .button {
-            padding: 1vw 2vw;
+            width: 90%;
+            padding: 15px 20px;
             background-color: gold;
             color: black;
             text-decoration: none;
@@ -37,38 +32,48 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.5vw;
-            border-radius: 1vw; /* Закругление кнопок */
+            font-size: 18px;
+            border-radius: 15px;
             transition: background-color 0.3s;
-            margin: 1vw;
         }
         .button:hover {
             background-color: #e6c200;
         }
         .button img {
-            width: 3vw;
+            width: 30px;
             height: auto;
-            margin-left: 0.5vw;
+            margin-left: 10px;
         }
         .service {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 90%;
-            max-width: 600px; /* Максимальная ширина для больших экранов */
-            margin: 1vw 0;
-            padding: 1vw;
+            margin: 10px 0;
+            padding: 20px;
         }
         .service h1, .service p {
             text-align: center;
             width: 100%;
-            font-size: 2vw;
+            font-size: 20px;
         }
         img {
-            width: 80%;
+            width: 100%;
             height: auto;
             display: block;
-            border-radius: 2vw; /* Округление углов фото */
+            border-radius: 15px;
+        }
+        /* Медиа запросы для мобильных устройств */
+        @media (max-width: 600px) {
+            .button {
+                font-size: 5vw; /* Больший размер текста на маленьких экранах */
+            }
+            .service h1, .service p {
+                font-size: 5vw; /* Больший размер текста для заголовков и параграфов */
+            }
+            .button img {
+                width: 8vw; /* Больший размер изображений в кнопках */
+            }
         }
     </style>
 </head>
