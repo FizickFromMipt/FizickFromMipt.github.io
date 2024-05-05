@@ -14,10 +14,29 @@
             padding: 0;
         }
         .header {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #f8f8f8;
-            border-bottom: 1px solid #ccc;
+            text-align: center; /* Центрируем содержимое в шапке */
+            padding: 10px 0; /* Отступы сверху и снизу */
+            background-color: #f8f8f8; /* Фоновый цвет шапки */
+            border-bottom: 1px solid #ccc; /* Граница снизу */
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: gold; /* Золотой фон кнопки */
+            color: black; /* Черный текст */
+            text-decoration: none;
+            border-radius: 20px;
+            border: 2px solid #ffd700; /* Рамка золотого цвета */
+            display: inline-flex; /* Используем flex для внутренних элементов */
+            align-items: center; /* Выравнивание элементов по центру по вертикали */
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e6c200; /* Темно-золотой цвет при наведении */
+        }
+        .button img {
+            margin-left: 10px; /* Отступ слева от картинки */
+            width: 24px; /* Ширина картинки */
+            height: auto; /* Высота картинки, сохраняющая пропорции */
         }
         .service {
             margin: 20px;
@@ -28,26 +47,8 @@
         }
         .service h2 { color: #2C3E50; }
         .service p { margin: 5px 0; }
-        .button {
-            padding: 10px 20px;
-            background-color: #00BCD4;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #0097A7;
-        }
-        .button img {
-            margin-right: 10px;
-            width: 24px;
-            height: auto;
-            vertical-align: middle;
-        }
         img {
-            max-width: 100%;
+            max-width: 100%; /* Убедитесь, что изображение не выходит за рамки своего контейнера */
             height: auto;
             display: block;
         }
@@ -56,8 +57,8 @@
 <body>
     <div class="header">
         <a href="calendar.html" class="button">
-            <img src="image_index/calendar.jpg" alt="Календарь">
             Календарь
+            <img src="image_index/calendar.png" alt="Календарь">
         </a>
     </div>
 
@@ -114,3 +115,4 @@
 
 </body>
 </html>
+
