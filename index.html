@@ -23,6 +23,7 @@
             border-bottom: 2px solid #ccc;
         }
         .button {
+            position: relative;
             width: 90%;
             padding: 15px 20px;
             background-color: gold;
@@ -35,14 +36,18 @@
             font-size: 18px;
             border-radius: 15px;
             transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #e6c200;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            overflow: visible;
         }
         .button img {
-            width: 30px;
+            width: 70px; /* Установим размер изображения подходящий к размеру текста */
             height: auto;
-            margin-left: 10px;
+            margin-left: 10px; /* Отступ слева от текста */
+            position: relative; /* Устанавливаем относительное позиционирование, если нужно */
+        }
+        .button:last-child {
+            margin-right: 0; /* Убрать отступ справа для последней кнопки, если это необходимо */
         }
         .service {
             display: flex;
@@ -63,7 +68,7 @@
             display: block;
             border-radius: 15px;
         }
-        /* Медиа запросы для мобильных устройств */
+                /* Медиа запросы для мобильных устройств */
         @media (max-width: 600px) {
             .button {
                 font-size: 5vw; /* Больший размер текста на маленьких экранах */
@@ -131,8 +136,8 @@
     <div class="service" id="gifts">
         <img src="image_index/gifts.jpg" alt="Подарочные сертификаты">
         <h1>Подарочные сертификаты</h1>
-        <p><a href="#" class="button">Записаться</a></p>
-        <p><a href="gallery.html" class="button">Смотреть</a></p>
+        <p><a href="#" class="button">Купить</a></p>
     </div>
 </body>
 </html>
+
