@@ -10,6 +10,14 @@
         body {
             font-family: 'Nunito', sans-serif;
             font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
         }
         .service {
             margin: 20px;
@@ -32,30 +40,25 @@
         .button:hover {
             background-color: #0097A7;
         }
-        .carousel { width: 100%; overflow: hidden; position: relative; }
-        .carousel img { width: 100%; display: block; }
-        .carousel button {
-            position: absolute;
-            top: 50%;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 50%;
-        }
-        .carousel button.prev { left: 10px; }
-        .carousel button.next { right: 10px; }
-        img {
-            max-width: 100%; /* ensures the image is never wider than its container */
+        .button img {
+            margin-right: 10px;
+            width: 24px;
             height: auto;
-            display: block; /* removes bottom space/margin */
+            vertical-align: middle;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="calendar.html" class="button">Календарь</a>
+        <a href="calendar.html" class="button">
+            <img src="calendar.jpg" alt="Календарь">
+            Календарь
+        </a>
     </div>
 
     <!-- Лекции -->
