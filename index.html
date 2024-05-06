@@ -29,6 +29,7 @@
         }
         .button {
             position: relative;
+            overflow: visible; /* Позволяет изображению выходить за границы кнопки */
             width: 90%;
             padding: 15px 20px;
             background-color: cyan;
@@ -46,10 +47,14 @@
             overflow: visible;
         }
         .button img {
-            width: 100px; /* Установим размер изображения подходящий к размеру текста */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px; /* Увеличенный размер изображения */
             height: auto;
-            margin-left: 10px; /* Отступ слева от текста */
-            position: relative; /* Устанавливаем относительное позиционирование, если нужно */
+            transform: translate(-50%, -50%); /* Центрирование изображения */
+            z-index: 0;
+            margin-left: 70px; /* Отступ слева от текста */
         }
         .button:last-child {
             margin-right: 0; /* Убрать отступ справа для последней кнопки, если это необходимо */
