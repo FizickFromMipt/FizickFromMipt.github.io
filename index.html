@@ -57,6 +57,13 @@
         .button:hover {
             background-color: #00E5EE; /* Темно-циановый цвет при наведении */
         }
+        .button-electric {
+            background-color: #3EB489; /* Мятный цвет */
+            color: black; /* Текст на кнопке */
+        }
+        .button-electric:hover {
+            background-color: #37A07C; /* Темнее при наведении для мятного цвета */
+        }
         .service {
             display: flex;
             flex-direction: column;
@@ -102,11 +109,11 @@
 </head>
 <body>
     <div class="header">
-        <a href="calendar.html" class="button">
+        <a href="calendar.html" class="button button-electric">
             Календарь
             <img src="image_index/calendar.png" alt="Календарь">
         </a>
-        <a href="gallery.html" class="button">Архив блога</a>
+        <a href="gallery.html" class="button button-electric">Архив блога</a>
     </div>
 
     <div class="service" id="lectures">
