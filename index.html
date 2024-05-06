@@ -26,7 +26,6 @@
         .header {
             text-align: center;
             padding: 20px;
-            background-color: #e6e6e6;
             border-bottom: 2px solid #ccc;
         }
         .button {
@@ -71,6 +70,13 @@
             text-align: center;
             width: 100%;
             font-size: 20px;
+            color: black; /* Основной цвет текста для светлой темы */
+        }
+        /* Адаптация под темную тему */
+        @media (prefers-color-scheme: dark) {
+            .service h1 {
+                color: white; /* Цвет текста для темной темы */
+            }
         }
         .service p {
             margin: 3px 0; /* Уменьшенные вертикальные отступы */
