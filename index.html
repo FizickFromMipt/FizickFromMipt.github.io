@@ -4,176 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги психолога</title>
-    <!-- Подключение шрифта Nunito с Google Fonts -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: 'Nunito', sans-serif;
-            font-weight: bold;
-            background-color: rgba(255, 250, 250, 0.8); /* Светлый фон с небольшой прозрачностью */
-            transition: background-color 0.3s ease;
-        }
-        /* Адаптация под темную тему */
-        @media (prefers-color-scheme: dark) {
-            body, html {
-                background-color: rgba(35, 38, 37, 0.8); /* Темный фон с небольшой прозрачностью */
-            }
-        }
-        .header {
-            text-align: center;
-            padding: 20px;
-        }
-        .button {
-            position: relative;
-            overflow: visible; /* Позволяет изображению выходить за границы кнопки */
-            width: 90%;
-            padding: 15px 20px;
-            background-color: #87CEFA; /* Обновленный голубой цвет */
-            color: black;
-            text-decoration: none;
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-            border-radius: 15px;
-            transition: background-color 0.3s;
-            margin-right: 10px;
-            margin-bottom: 20px;
-            overflow: visible;
-        }
-        .button img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100px; /* Увеличенный размер изображения */
-            height: auto;
-            transform: translate(-50%, -50%); /* Центрирование изображения */
-            z-index: 0;
-            margin-left: 70px; /* Отступ слева от текста */
-        }
-        .button:last-child {
-            margin-right: 0; /* Убрать отступ справа для последней кнопки, если это необходимо */
-        }
-        .button:hover {
-            background-color: #7EC0EE; /* Темнее при наведении */        }
-        .button-electric {
-            background-color: #3EB489; /* Мятный цвет */
-            color: black; /* Текст на кнопке */
-        }
-        .button-electric:hover {
-            background-color: #37A07C; /* Темнее при наведении для мятного цвета */
-        }
-        .service {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-            margin: 10px 0;
-            padding: 20px;
-        }
-        .service h1, .service p {
-            text-align: center;
-            width: 100%;
-            font-size: 20px;
-            color: black; /* Основной цвет текста для светлой темы */
-        }
-        /* Адаптация под темную тему */
-        @media (prefers-color-scheme: dark) {
-            .service h1 {
-                color: white; /* Цвет текста для темной темы */
-            }
-        }
-        .service p {
-            margin: 3px 0; /* Уменьшенные вертикальные отступы */
-        }
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 15px;
-        }
-        /* Медиа запросы для мобильных устройств */
-        @media (max-width: 600px) {
-            .button {
-                font-size: 5vw; /* Больший размер текста на маленьких экранах */
-            }
-            .service h1, .service p {
-                font-size: 5vw; /* Больший размер текста для заголовков и параграфов */
-            }
-            .button img {
-                width: 12vw; /* Больший размер изображений в кнопках */
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <a href="calendar.html" class="button button-electric">
-            Календарь
-            <img src="image_index/calendar.png" alt="Календарь">
+            <img src="assets/images/icons/calendar.png" alt="Календарь">
+            <span>Календарь</span>
         </a>
-        <a href="gallery.html" class="button button-electric">Архив блога</a>
-    </div>
+        <a href="gallery.html" class="button button-electric">
+            <img src="assets/images/icons/inbox.png" alt="Архив блога">
+            <span>Архив блога</span>
+        </a>
+    </header>
 
-    <div class="service" id="lectures">
-        <img src="image_index/lectures.jpg" alt="Лекции">
+    <section class="service" id="lectures">
+        <img src="assets/images/main-page/lectures.jpg" alt="Лекции">
         <h1>Лекции 500₽</h1>
-        <p><a href="payment_lectures.html" class="button">записаться</a></p>
-        <p><a href="gallery.html" class="button">смотреть</a></p>
-    </div>
+        <a href="payment_lectures.html" class="button">
+            <img src="assets/images/icons/profit.png" alt="Записаться">
+            <span>Записаться</span>
+        </a>
+        <a href="gallery.html" class="button">
+            <img src="assets/images/icons/image-gallery.png" alt="Смотреть">
+            <span>Смотреть</span>
+        </a>
+    </section>
 
-    <div class="service" id="trainings">
-        <img src="image_index/trainings.jpg" alt="Тренинги">
+    <section class="service" id="trainings">
+        <img src="assets/images/main-page/trainings.jpg" alt="Тренинги">
         <h1>Тренинги 16500₽</h1>
-        <p><a href="#" class="button">записаться</a></p>
-        <p><a href="gallery.html" class="button">смотреть</a></p>
-    </div>
+        <a href="payment_lectures.html" class="button">
+            <img src="assets/images/icons/profit.png" alt="Записаться">
+            <span>Записаться</span>
+        </a>
+        <a href="gallery.html" class="button">
+            <img src="assets/images/icons/image-gallery.png" alt="Смотреть">
+            <span>Смотреть</span>
+        </a>
+    </section>
 
-    <div class="service" id="seminars1">
-        <img src="image_index/seminars.jpg" alt="Семинары">
+    <section class="service" id="seminars1">
+        <img src="assets/images/main-page/seminars.jpg" alt="Семинары">
         <h1>Семинары (12 часов) 6000₽</h1>
-        <p><a href="#" class="button">записаться</a></p>
-        <p><a href="gallery.html" class="button">смотреть</a></p>
-    </div>
+        <a href="payment_lectures.html" class="button">
+            <img src="assets/images/icons/profit.png" alt="Записаться">
+            <span>Записаться</span>
+        </a>
+        <a href="gallery.html" class="button">
+            <img src="assets/images/icons/image-gallery.png" alt="Смотреть">
+            <span>Смотреть</span>
+        </a>
+    </section>
 
-    <div class="service" id="seminars2">
-        <img src="image_index/seminars.jpg" alt="Семинары">
+    <section class="service" id="seminars2">
+        <img src="assets/images/main-page/seminars.jpg" alt="Семинары">
         <h1>Семинары (18 часов) 9000₽</h1>
-        <p><a href="#" class="button">записаться</a></p>
-        <p><a href="gallery.html" class="button">смотреть</a></p>
-    </div>
+        <a href="payment_lectures.html" class="button">
+            <img src="assets/images/icons/profit.png" alt="Записаться">
+            <span>Записаться</span>
+        </a>
+        <a href="gallery.html" class="button">
+            <img src="assets/images/icons/image-gallery.png" alt="Смотреть">
+            <span>Смотреть</span>
+        </a>
+    </section>
 
-    <div class="service" id="diagnostics">
-        <img src="image_index/diagnostics.jpg" alt="Диагностика">
+    <section class="service" id="diagnostics">
+        <img src="assets/images/main-page/diagnostics.jpg" alt="Диагностика">
         <h1>Диагностика 5000₽</h1>
-        <p><a href="#" class="button">записаться</a></p>
-        <p><a href="gallery.html" class="button">смотреть</a></p>
-    </div>
+        <a href="payment_lectures.html" class="button">
+            <img src="assets/images/icons/profit.png" alt="Записаться">
+            <span>Записаться</span>
+        </a>
+        <a href="gallery.html" class="button">
+            <img src="assets/images/icons/image-gallery.png" alt="Смотреть">
+            <span>Смотреть</span>
+        </a>
+    </section>
 
-    <div class="service" id="therapy">
-        <img src="image_index/therapy.jpg" alt="Терапия">
+    <section class="service" id="therapy">
+        <img src="assets/images/main-page/therapy.jpg" alt="Терапия">
         <h1>Терапия 5000₽</h1>
-        <p><a href="#" class="button">записаться</a></p>
-        <p><a href="gallery.html" class="button">смотреть</a></p>
-    </div>
+        <a href="payment_lectures.html" class="button">
+            <img src="assets/images/icons/profit.png" alt="Записаться">
+            <span>Записаться</span>
+        </a>
+        <a href="gallery.html" class="button">
+            <img src="assets/images/icons/image-gallery.png" alt="Смотреть">
+            <span>Смотреть</span>
+        </a>
+    </section>
 
-    <div class="service" id="exams">
-        <img src="image_index/exams.jpg" alt="Экзамен">
+    <section class="service" id="exams">
+        <img src="assets/images/main-page/exams.jpg" alt="Экзамен">
         <h1>Экзамен</h1>
-        <p><a href="#" class="button">записаться</a></p>
-        <p><a href="gallery.html" class="button">смотреть</a></p>
-    </div>
+        <a href="payment_lectures.html" class="button">
+            <img src="assets/images/icons/profit.png" alt="Записаться">
+            <span>Записаться</span>
+        </a>
+        <a href="gallery.html" class="button">
+            <img src="assets/images/icons/image-gallery.png" alt="Смотреть">
+            <span>Смотреть</span>
+        </a>
+    </section>
 
-    <div class="service" id="gifts">
-        <img src="image_index/gifts.jpg" alt="Подарочные сертификаты">
+    <section class="service" id="gifts">
+        <img src="assets/images/main-page/gifts.jpg" alt="Подарочные сертификаты">
         <h1>Подарочные сертификаты</h1>
-        <p><a href="#" class="button">купить</a></p>
-    </div>
+        <a href="#" class="button">купить</a>
+    </section>
 </body>
 </html>
 
