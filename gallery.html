@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея архива блога</title>
-    <!-- Подключение стилей -->
     <style>
         body {
             font-family: 'Nunito', sans-serif;
@@ -14,9 +13,11 @@
         @media (prefers-color-scheme: dark) {
             body {
                 color: white; /* Белый цвет текста в темной теме */
+                background-color: #232625CC;
             }
         }
         h1, p {
+            text-align: center;
             margin: 20px;
         }
         form {
@@ -73,7 +74,7 @@
             const gallery = document.getElementById('gallery');
             images.forEach(image => {
                 const img = document.createElement('img');
-                img.src = 'archive/' + image; // предполагается, что изображения находятся в папке Archive
+                img.src = 'assets/images/archive/' + image; // предполагается, что изображения находятся в папке Archive
                 gallery.appendChild(img);
             });
         }
